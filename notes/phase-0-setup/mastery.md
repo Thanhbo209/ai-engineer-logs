@@ -14,7 +14,7 @@
   - Evidence: Added `.env` to `.gitignore` and created `.env.example` with placeholder values only.
   - Note: Local secrets belong in `.env`; public examples belong in `.env.example`.
 
-- [ ] Push branched code to GitHub
+- [x] Push branched code to GitHub
   - Evidence: Initialized Git, created branch `phase-0-setup`, and made local commit `550a03b` with message `feat(phase-0): add learning log setup`.
   - Pending: Add a GitHub remote and push `phase-0-setup`.
   - Note: Phase 0 should remain `In progress` until the branch and first commit are pushed to GitHub.
