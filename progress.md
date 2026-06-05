@@ -7,4 +7,4 @@
 
 ## Current Focus
 
-Complete Phase 0 by pushing the first branch and commit to GitHub, then update this status to `Done`.
+Local Git setup is done on branch `phase-0-setup`. Complete Phase 0 by adding a GitHub remote, pushing the branch, then updating this status to `Done`.

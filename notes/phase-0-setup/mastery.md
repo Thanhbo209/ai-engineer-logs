@@ -15,5 +15,6 @@
   - Note: Local secrets belong in `.env`; public examples belong in `.env.example`.
 
 - [ ] Push branched code to GitHub
-  - Evidence: Pending Git branch, local commit, remote setup, and GitHub push.
-  - Note: Phase 0 should remain `In progress` until the branch and first commit are pushed.
+  - Evidence: Initialized Git, created branch `phase-0-setup`, and made local commit `550a03b` with message `feat(phase-0): add learning log setup`.
+  - Pending: Add a GitHub remote and push `phase-0-setup`.
+  - Note: Phase 0 should remain `In progress` until the branch and first commit are pushed to GitHub.
