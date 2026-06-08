@@ -1,37 +1,28 @@
-# Software Engineering to AI Engineering Roadmap
+# Software Engineering and AI Engineering Roadmaps
 
-This repository documents my long-term path from Software Engineering fundamentals to AI Engineering specialization.
+This repository separates my learning path into two independent roadmap folders:
 
-The first goal is to build strong SWE foundations before moving into AI systems.
+1. Software Engineering Foundations
+2. AI Engineering
+
+I am focusing on Software Engineering Foundations first before moving deeply into AI Engineering.
+
+## Structure
+
+- `roadmaps/software-engineering-foundations/`
+- `roadmaps/ai-engineering/`
+
+Each roadmap has its own:
+
+- notes
+- practice
+- projects
+- resources
+- progress
+- roadmap documentation
 
 ## Current Focus
 
-Software Engineering Core
+The active roadmap is `roadmaps/software-engineering-foundations/`.
 
-## Repository Structure
-
-- `notes/`: learning notes and explanations
-- `practice/`: small runnable exercises
-- `projects/`: larger portfolio projects
-- `resources/`: references and cheatsheets
-- `archive/`: older roadmap material preserved for reference
-
-## Learning Philosophy
-
-I do not mark a topic complete just because I read about it.
-
-A topic is complete only when there is evidence:
-
-- notes
-- snippets
-- exercises
-- tests
-- project links
-- written explanation
-
-## Tracks
-
-- Track 1: Software Engineering Core
-- Track 2: AI Engineering Specialization
-
-AI Engineering comes after the Software Engineering Core is strong enough to support deeper AI systems work.
+AI Engineering is preserved as a separate later roadmap under `roadmaps/ai-engineering/`.
