@@ -1,4 +1,4 @@
-# Phase 1 - Computer Science Foundations Mastery
+# Computer Science Foundations Mastery
 
 ## Criteria
 
@@ -31,3 +31,7 @@
 
 - [ ] I can use basic CLI commands and explain pipes/grep.
   - Evidence:
+
+## Migration Note
+
+Existing Phase 1 CS foundation notes and snippets were migrated here as starting material. Criteria should be checked only after the learner reviews the material and adds concrete evidence.

@@ -1,5 +1,5 @@
 """
-Phase 1 - Computer Science Foundations Snippets
+Computer Science Foundations Snippets
 
 This file contains small examples for:
 - arrays
@@ -38,7 +38,7 @@ print("After removed: ", nums)
 
 user = {
     "name": "Thanh",
-    "role": "AI Engineer learner",
+    "role": "software engineering learner",
 }
 
 # Access value through key: average O(1)

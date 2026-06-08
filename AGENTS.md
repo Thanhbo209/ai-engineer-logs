@@ -2,204 +2,165 @@
 
 ## Purpose
 
-This repo is a long-term AI engineering roadmap. It tracks a 28-phase study journey with reading notes, small code snippets, runnable practice projects, resources, progress tracking, and later portfolio work.
+This repo is a long-term learning monorepo for becoming a strong software engineer first, then specializing in AI engineering.
 
 Agents should keep the repo useful for two audiences:
 
 - The learner, who needs clear notes, evidence of mastery, and runnable practice code.
-- Recruiters or engineers reviewing the repo, who need a quick README, visible progress, and a few strong project links.
+- Recruiters or engineers reviewing the repo, who need quick orientation, visible progress, and links to strong projects.
+
+## Strategic Direction
+
+The roadmap has two major tracks:
+
+1. Software Engineering Core
+2. AI Engineering Specialization
+
+Software Engineering comes first. AI Engineering comes later after the core is strong enough to support deeper work with ML, LLMs, RAG, agents, evaluation, and AI backend systems.
 
 ## Operating Rules
 
-- Do not create the full 28-phase scaffold unless explicitly asked.
-- Keep reading notes and runnable project code separate.
-- Put understanding, summaries, and small reading snippets in `notes/`.
-- Put runnable mini-projects, experiments, apps, and tests in `practice/`.
-- Keep changes phase-scoped unless the request is clearly repo-wide.
-- Update `progress.md` when phase status changes.
-- Do not treat a phase as complete until its `mastery.md` has concrete evidence for the criteria.
+- Keep the repo software-engineering-first unless the user explicitly asks to work on AI specialization.
+- Do not create the full roadmap scaffold unless explicitly asked.
+- Create only folders needed for the current stage, plus clear placeholders when Git would otherwise lose an important active folder.
+- Keep reading notes and runnable code separate.
+- Put understanding, summaries, diagrams, explanations, and reading snippets in `notes/`.
+- Put small runnable exercises, drills, snippets, and isolated experiments in `practice/`.
+- Put larger portfolio-style builds in `projects/`.
+- Put reading lists, links, cheatsheets, and references in `resources/`.
+- Put outdated roadmap material in `archive/` instead of deleting it.
+- Do not delete existing work. Archive old AI-first material under `archive/old-ai-roadmap/` when it no longer fits.
+- Do not create full AI track folders unless the user asks for AI-track work.
+- Keep changes topic-scoped unless the request is clearly repo-wide.
+- Update `progress.md` when topic status changes.
+- Do not treat a topic as complete until its `mastery.md` has concrete evidence for the criteria.
 - Never commit `.env` files or real secrets. Use `.env.example` with placeholder values.
 - Pin dependencies with `pip freeze > requirements.txt` only after a project works.
 - Do not polish notes like production code. Notes are for understanding; projects are for execution.
 
 ## Canonical Layout
 
-Use this shape as the target structure. The current repo may only contain part of it; do not scaffold missing folders unless requested.
+Use this shape as the long-term target. The current repo may only contain part of it; do not scaffold missing folders unless requested.
 
 ```text
-ai-engineer-roadmap/
-|-- notes/
-|   |-- phase-01-foundations/
-|   |   |-- notes.md
-|   |   |-- snippets.py
-|   |   `-- mastery.md
-|   |-- phase-02-python-advanced/
-|   |-- phase-03-data-tools/
-|   |-- phase-04-sql-nosql/
-|   |-- phase-05-math-stats/
-|   |-- phase-06-ml-methodology/
-|   |-- phase-07-classical-ml/
-|   |-- phase-08-deep-learning/
-|   |-- phase-09-computer-vision/
-|   |-- phase-10-nlp-basics/
-|   |-- phase-11-transformers/
-|   |-- phase-12-llms/
-|   |-- phase-13-prompt-engineering/
-|   |-- phase-14-rag/
-|   |-- phase-15-vector-dbs/
-|   |-- phase-16-agents/
-|   |-- phase-17-fine-tuning/
-|   |-- phase-18-evaluation/
-|   |-- phase-19-ai-backend/
-|   |-- phase-20-mlops/
-|   |-- phase-21-deployment/
-|   |-- phase-22-cloud/
-|   |-- phase-23-security/
-|   |-- phase-24-observability/
-|   |-- phase-25-system-design/
-|   |-- phase-26-portfolio/
-|   |-- phase-27-career/
-|   `-- phase-28-specialization/
-|-- practice/
-|   |-- phase-01-foundations/
-|   |-- phase-03-data-tools/
-|   |-- phase-06-ml-methodology/
-|   |-- phase-07-classical-ml/
-|   |-- phase-08-deep-learning/
-|   |-- phase-09-cv/
-|   |-- phase-10-nlp/
-|   |-- phase-11-transformers/
-|   |-- phase-12-llms/
-|   |-- phase-13-prompts/
-|   |-- phase-14-rag/
-|   |-- phase-15-vector-dbs/
-|   |-- phase-16-agents/
-|   |-- phase-17-fine-tuning/
-|   |-- phase-18-evals/
-|   |-- phase-19-ai-backend/
-|   |-- phase-20-mlops/
-|   |-- phase-21-deployment/
-|   |-- phase-22-cloud/
-|   `-- phase-26-portfolio/
-|-- resources/
-|   |-- reading-list.md
-|   `-- cheatsheets/
-|-- AIEngineer.html
+software-engineering-to-ai-engineering-roadmap/
+|-- README.md
+|-- AGENTS.md
+|-- ROADMAP.md
 |-- progress.md
-`-- README.md
+|-- notes/
+|   |-- software-engineering/
+|   `-- ai-engineering/
+|-- practice/
+|   |-- software-engineering/
+|   `-- ai-engineering/
+|-- projects/
+|   |-- swe/
+|   `-- ai/
+|-- resources/
+|   |-- software-engineering/
+|   |-- ai-engineering/
+|   `-- cheatsheets/
+`-- archive/
+    `-- old-ai-roadmap/
+```
+
+## Current Active Stage
+
+Focus on Software Engineering Core:
+
+```text
+notes/software-engineering/01-programming-fundamentals/
+notes/software-engineering/02-computer-science-foundations/
+practice/software-engineering/01-programming-fundamentals/
+practice/software-engineering/02-computer-science-foundations/
 ```
 
 ## Notes Rules
 
-Each phase folder under `notes/` should use these files when applicable:
+Each topic folder under `notes/` should use these files when applicable:
 
 - `notes.md`: personal notes, summaries, and explanations from reading.
-- `snippets.py`: small code bits tested while reading. This is not the place for full projects.
-- `mastery.md`: copied roadmap mastery criteria plus one sentence of evidence for each completed item.
+- `snippets.md` or `snippets.py`: small examples tested while learning. This is not the place for full projects.
+- `mastery.md`: topic mastery criteria plus evidence for completed items.
 
 `mastery.md` should describe what was actually done, not just what was read.
 
 Example:
 
 ```markdown
-# Phase 11 - Transformers mastery
+# Backend Engineering Mastery
 
 ## Criteria
 
-- [x] Explain attention end-to-end
-  - Wrote a blog-style explanation in notes.md and reviewed it against diagrams.
-- [x] Implement scaled dot-product attention in PyTorch
-  - Built and tested practice/phase-11-transformers/attention-scratch/attention.py.
-- [ ] Fine-tune a model on a small classification task
+- [x] Build a small HTTP API
+  - Evidence: Built and tested `projects/swe/backend-api`.
+- [ ] Add authentication middleware
 ```
 
-## Practice Project Rules
+## Practice Rules
 
-Practice projects belong under `practice/phase-XX-topic/project-name/`.
+Practice work belongs under `practice/track/topic/exercise-name/` when there is runnable code.
 
-Each runnable mini-project should include:
+Use this structure for runnable practice exercises:
 
 ```text
-project-name/
+exercise-name/
 |-- README.md
-|-- main.py
-|-- requirements.txt
-|-- .env.example
-`-- tests/
-    `-- test_basic.py
+|-- src/
+|-- tests/
+`-- package/dependency file if needed
 ```
 
-Project README files should answer:
+Practice README files should answer:
 
-- What the project does.
-- Why it was built for this phase.
+- What the exercise does.
+- Why it was built for this topic.
 - What was learned.
 - How to run it.
-- The architecture or data flow, in a short paragraph or small diagram.
 
-Keep one commit per mini-project milestone when this repo is under Git. Use commit messages like:
+## Project Rules
 
-```text
-feat(phase-12): add streaming chat with token cost tracking
-```
+Portfolio-style projects belong under `projects/swe/` or `projects/ai/`.
+
+Projects should eventually include:
+
+- A clear README.
+- Setup and run instructions.
+- Tests where useful.
+- Architecture or data-flow notes.
+- Evidence links from the related `mastery.md`.
 
 ## Top-Level README Rules
 
-The top-level `README.md` is recruiter-facing. It should answer these questions quickly:
+The top-level `README.md` is recruiter-facing. It should answer quickly:
 
-- What is this repo?
-- How far along is the roadmap?
-- Who is the learner?
-- Where is the most interesting code?
+- What this repo is.
+- The current focus.
+- How the repo is structured.
+- How progress is tracked.
+- Where the strongest projects are once they exist.
 
-Use this structure:
-
-- Hero header: repo title and 1-2 sentence description.
-- Progress tracker: phase, topic, status.
-- Featured projects: 3-4 strongest links with one-line descriptions.
-- Tech stack: tools actually used across projects.
-
-Do not list tools that were only read about. Only list tools used in notes, snippets, or projects.
+Do not list tools that were only read about. Only list tools used in notes, snippets, practice, or projects.
 
 ## Progress And Mastery
 
-`progress.md` should have one line per phase and a simple status. Use these statuses consistently:
+`progress.md` should have one line per topic and a simple status. Use these statuses consistently:
 
 - `Done`
 - `In progress`
 - `Not started`
 
-Before moving from Phase N to Phase N+1:
+Before moving a topic to `Done`:
 
-- Update the phase notes.
+- Update the topic notes.
 - Fill in `mastery.md` with criteria and evidence.
+- Link related practice or project work.
 - Update `progress.md`.
-- Link any related practice project.
-
-## Phase Project Groupings
-
-Some phases are conceptual and should share a practice project instead of forcing a standalone app.
-
-| Phases | Cluster                          | Practice guidance                                                      |
-| ------ | -------------------------------- | ---------------------------------------------------------------------- |
-| 01-02  | Python core                      | Separate micro-scripts per concept are fine.                           |
-| 03-04  | Data + SQL                       | One EDA + SQL query project covers both.                               |
-| 05     | Math/stats                       | Notes + Jupyter notebook; no separate project required.                |
-| 06-07  | Classical ML                     | One full sklearn project with proper evaluation.                       |
-| 08-09  | DL + CV                          | One PyTorch training-loop project plus fine-tuned ResNet.              |
-| 10-11  | NLP + Transformers               | Separate TF-IDF baseline and attention-from-scratch projects.          |
-| 12-13  | LLMs + Prompts                   | One streaming chat app with eval-backed prompts.                       |
-| 14-15  | RAG + Vectors                    | One RAG system with hybrid retrieval and cited answers.                |
-| 16     | Agents                           | Standalone bounded tool agent; this is a flagship project.             |
-| 17-18  | Fine-tuning + Evals              | One LoRA run plus eval suite against a baseline.                       |
-| 19-21  | Backend + Ops                    | One production API with streaming, Docker, and health checks.          |
-| 22-24  | Cloud + Security + Observability | Add cloud deploy, tracing, and secrets handling to the production API. |
-| 25-26  | Design + Portfolio               | Write ADR docs and build 2-3 flagship repos.                           |
 
 ## Ground Rules
 
-- Notes are not code. Practice is not scratch notes. Cross-link between them when needed.
-- Keep everything in this monorepo until Phase 26 portfolio work, unless the user asks for standalone repos.
-- Portfolio projects should eventually have polished READMEs, live demos when possible, architecture diagrams, and detailed writeups.
-- After finishing a phase, add a short public-writing draft or summary if the user asks for blog or LinkedIn material.
+- Notes are not projects. Practice is not scratch notes. Projects are portfolio builds.
+- Keep everything in this monorepo until portfolio work requires standalone repos, unless the user asks otherwise.
+- Do not create frontend, backend, AI, or deployment apps during a structure-only refactor.
 - Preserve existing files and user changes. Do not rewrite unrelated notes, progress files, or project files.
