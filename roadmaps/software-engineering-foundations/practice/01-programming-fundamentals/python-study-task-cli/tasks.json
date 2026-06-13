@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Learn lists",
+    "phase": 1,
+    "topic": "python",
+    "done": true
+  },
+  {
+    "id": 2,
+    "title": "Learn dicts",
+    "phase": 1,
+    "topic": "python",
+    "done": true
+  },
+  {
+    "id": 3,
+    "title": "Learn Python Function",
+    "phase": 2,
+    "topic": "Python Fundamentals",
+    "done": false
+  }
+]
